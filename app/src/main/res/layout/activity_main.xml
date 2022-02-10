@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -31,6 +51,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent"
         android:text="B2"
         app:layout_constraintBottom_toBottomOf="@+id/button5"
         app:layout_constraintEnd_toStartOf="@+id/button5"
@@ -40,6 +61,7 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent"
         android:text="B3"
         app:layout_constraintBottom_toBottomOf="@+id/button6"
         app:layout_constraintEnd_toStartOf="@+id/button6"
@@ -63,5 +85,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/outlineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK GOOD"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
